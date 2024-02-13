@@ -41,6 +41,7 @@ tuxedo-control-center
     cd tuxedo-control-center
 
     npm install
+    npm run build
     ```
    **Note:** Do ***not*** continue with `npm audit fix`. Known to cause various issues.
 
