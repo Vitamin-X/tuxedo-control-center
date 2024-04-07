@@ -43,6 +43,7 @@ tuxedo-control-center
     export NODE_OPTIONS=--openssl-legacy-provider
     npm install
     npm run build
+    npm run pack-prod -- deb
     ```
    **Note:** Do ***not*** continue with `npm audit fix`. Known to cause various issues.
 
