@@ -30,17 +30,19 @@ tuxedo-control-center
 1. Install git, gcc, g++, make, nodejs, npm and libudev-dev \
    Ex (deb):
    ```
-   curl -sL https://deb.nodesource.com/setup_14.x | sudo -E bash -
+   curl -sL https://deb.nodesource.com/setup_18.x | sudo -E bash -
 
    sudo apt install -y git gcc g++ make nodejs libudev-dev
    ```
 2. Clone & install libraries
     ```
-    git clone https://github.com/tuxedocomputers/tuxedo-control-center
+    git clone https://github.com/Vitamin-X/tuxedo-control-center
 
     cd tuxedo-control-center
 
+    export NODE_OPTIONS=--openssl-legacy-provider
     npm install
+    npm run build
     ```
    **Note:** Do ***not*** continue with `npm audit fix`. Known to cause various issues.
 
